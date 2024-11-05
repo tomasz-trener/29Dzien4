@@ -21,3 +21,7 @@ Wymagania:
 
     Dodaj zestaw RadioButton'ów, które pozwol¹ na wybór jednostki temperatury: Celsjusze, Kelwiny, Fahrenheit. 
     Dodaj mo¿liwoœæ odœwie¿enia danych po klikniêciu w dodatkowy przycisk "Odœwie¿".
+
+PodpowiedŸ:
+
+    Najnowsza wersja managera pogody znajduje siê w Dzien3/P09Konstruktory
