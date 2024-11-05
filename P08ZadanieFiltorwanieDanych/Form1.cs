@@ -12,22 +12,16 @@ namespace P08ZadanieFiltorwanieDanych
 {
     public partial class Form1 : Form
     {
+        ManagerZawodnikow mz = new ManagerZawodnikow();
         public Form1()
         {
             InitializeComponent();
+
+            mz.WczytajZawodnikow();
+            cbKraje.DataSource = mz.PodajKraje();
         }
 
-        private void btnWczytaj_Click(object sender, EventArgs e)
-        {
-            ManagerZawodnikow mz = new ManagerZawodnikow();
-            Zawodnik[] zawodnicy = mz.WczytajZawodnikow();
-
-            //foreach (var z in zawodnicy)
-            //    lbDane.Items.Add(z.Imie + " " + z.Nazwisko);
-
-            lbDane.DataSource = zawodnicy; // wiązanie danych
-            lbDane.DisplayMember = "ImieNazwisko";
-        }
+      
 
         private void btnTemperatuara_Click(object sender, EventArgs e)
         {
@@ -41,9 +35,25 @@ namespace P08ZadanieFiltorwanieDanych
                 zaznaczony.Kraj, zaznaczony.ImieNazwisko, temp);
 
             int rozmiar = this.Width;
-            lblRaport.MaximumSize = new Size(170, rozmiar-45);
+            lblRaport.MaximumSize = new Size(rozmiar - 45, 0);
             lblRaport.AutoSize = true;
         
+        }
+
+        private void cbKraje_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string zaznaczonyKraj = (string)cbKraje.SelectedItem;
+
+            if(zaznaczonyKraj != null)
+            {
+                lbDane.DataSource = mz.PodajZawodnikow(zaznaczonyKraj);
+                lbDane.DisplayMember = "ImieNazwisko";
+
+                double wzrost = mz.PodajSredniWzrost(zaznaczonyKraj);
+                lblRaportWzrost.Text = string.Format("Sredni wzrost : {0:0.00} cm", wzrost);
+            }
+
+           
         }
     }
 }

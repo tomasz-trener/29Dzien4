@@ -41,9 +41,13 @@ namespace P07DataBinding
                 zaznaczony.Kraj, zaznaczony.ImieNazwisko, temp);
 
             int rozmiar = this.Width;
-            lblRaport.MaximumSize = new Size(170, rozmiar-45);
+
+            lblRaport.MaximumSize = new Size(rozmiar - 45,0);
             lblRaport.AutoSize = true;
-        
+             
+
         }
+
+  
     }
 }

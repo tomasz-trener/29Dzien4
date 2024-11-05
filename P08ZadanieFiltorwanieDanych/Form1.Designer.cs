@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.lbDane = new System.Windows.Forms.ListBox();
-            this.btnWczytaj = new System.Windows.Forms.Button();
             this.btnTemperatuara = new System.Windows.Forms.Button();
             this.lblRaport = new System.Windows.Forms.Label();
+            this.cbKraje = new System.Windows.Forms.ComboBox();
+            this.lblRaportWzrost = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbDane
@@ -39,18 +40,8 @@
             this.lbDane.FormattingEnabled = true;
             this.lbDane.Location = new System.Drawing.Point(12, 39);
             this.lbDane.Name = "lbDane";
-            this.lbDane.Size = new System.Drawing.Size(164, 186);
+            this.lbDane.Size = new System.Drawing.Size(164, 147);
             this.lbDane.TabIndex = 0;
-            // 
-            // btnWczytaj
-            // 
-            this.btnWczytaj.Location = new System.Drawing.Point(12, 10);
-            this.btnWczytaj.Name = "btnWczytaj";
-            this.btnWczytaj.Size = new System.Drawing.Size(164, 23);
-            this.btnWczytaj.TabIndex = 1;
-            this.btnWczytaj.Text = "Wczytaj";
-            this.btnWczytaj.UseVisualStyleBackColor = true;
-            this.btnWczytaj.Click += new System.EventHandler(this.btnWczytaj_Click);
             // 
             // btnTemperatuara
             // 
@@ -71,14 +62,33 @@
             this.lblRaport.TabIndex = 3;
             this.lblRaport.Text = "label1";
             // 
+            // cbKraje
+            // 
+            this.cbKraje.FormattingEnabled = true;
+            this.cbKraje.Location = new System.Drawing.Point(12, 13);
+            this.cbKraje.Name = "cbKraje";
+            this.cbKraje.Size = new System.Drawing.Size(164, 21);
+            this.cbKraje.TabIndex = 4;
+            this.cbKraje.SelectedIndexChanged += new System.EventHandler(this.cbKraje_SelectedIndexChanged);
+            // 
+            // lblRaportWzrost
+            // 
+            this.lblRaportWzrost.AutoSize = true;
+            this.lblRaportWzrost.Location = new System.Drawing.Point(12, 198);
+            this.lblRaportWzrost.Name = "lblRaportWzrost";
+            this.lblRaportWzrost.Size = new System.Drawing.Size(35, 13);
+            this.lblRaportWzrost.TabIndex = 5;
+            this.lblRaportWzrost.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(198, 326);
+            this.Controls.Add(this.lblRaportWzrost);
+            this.Controls.Add(this.cbKraje);
             this.Controls.Add(this.lblRaport);
             this.Controls.Add(this.btnTemperatuara);
-            this.Controls.Add(this.btnWczytaj);
             this.Controls.Add(this.lbDane);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -90,9 +100,10 @@
         #endregion
 
         private System.Windows.Forms.ListBox lbDane;
-        private System.Windows.Forms.Button btnWczytaj;
         private System.Windows.Forms.Button btnTemperatuara;
         private System.Windows.Forms.Label lblRaport;
+        private System.Windows.Forms.ComboBox cbKraje;
+        private System.Windows.Forms.Label lblRaportWzrost;
     }
 }
 

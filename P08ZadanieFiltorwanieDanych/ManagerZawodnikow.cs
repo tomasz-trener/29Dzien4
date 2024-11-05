@@ -9,6 +9,7 @@ namespace P08ZadanieFiltorwanieDanych
 {
     internal class ManagerZawodnikow
     {
+        private Zawodnik[] zawodnicyCache; 
         public Zawodnik[] WczytajZawodnikow()
         {
             string url = "http://tomaszles.pl/wp-content/uploads/2019/06/zawodnicy.txt";
@@ -37,7 +38,67 @@ namespace P08ZadanieFiltorwanieDanych
 
                 zawodnicy[i - 1] = z;
             }
+            zawodnicyCache = zawodnicy;
             return zawodnicy;
+        }
+
+        public string[] PodajKraje()
+        {
+            // unikam ponownego wczytywania danych dzieki zastosowaniu cachu 
+            //   Zawodnik[] zawodnicy = WczytajZawodnikow();
+            if (zawodnicyCache == null)
+                throw new Exception("Najpierw wczytaj zawodnikow");
+            
+            Zawodnik[] zawodnicy = zawodnicyCache;
+
+            HashSet<string> kraje = new HashSet<string>();
+            foreach (var z in zawodnicy)
+                kraje.Add(z.Kraj);
+
+            List<string> posortowaneKraje = kraje.ToList();
+            posortowaneKraje.Sort(); // sortowanie alfabetyczne 
+//            posortowaneKraje.Reverse(); // ewentualnie mozna odwrocic kolejnosc 
+
+            return posortowaneKraje.ToArray();
+
+        }
+
+        public Zawodnik[] PodajZawodnikow(string kraj)
+        {
+            List<Zawodnik> zawodnicy = new List<Zawodnik>();
+            foreach (var z in zawodnicyCache )
+                if(z.Kraj == kraj)
+                    zawodnicy.Add(z);
+
+            posrotujZawodnikowPoNazwisku(zawodnicy);
+            return zawodnicy.ToArray();
+        }
+
+        private void posrotujZawodnikowPoNazwisku(List<Zawodnik> zawodnicy)
+        {
+            for (int i = 0; i < zawodnicy.Count-1; i++)
+            {
+                for (int j = 0; j < zawodnicy.Count-1-i; j++)
+                {
+                    if (string.Compare(zawodnicy[j].Nazwisko, zawodnicy[j+1].Nazwisko) > 0)
+                    {
+                        Zawodnik temp = zawodnicy[j];
+                        zawodnicy[j] = zawodnicy[j+1];
+                        zawodnicy[j+1] = temp;
+                    }
+                }
+            }
+        }
+
+        public double PodajSredniWzrost(string kraj)
+        {
+            Zawodnik[] zawodnicy = PodajZawodnikow(kraj);
+
+            double suma = 0;
+            foreach (var zawodnik in zawodnicy)
+                suma += zawodnik.wzrost;
+
+            return suma / zawodnicy.Length;
         }
     }
 }
