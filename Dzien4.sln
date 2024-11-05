@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07DataBinding", "P07DataBi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08ZadanieFiltorwanieDanych", "P08ZadanieFiltorwanieDanych\P08ZadanieFiltorwanieDanych.csproj", "{8BB77B6A-261E-41C4-8495-9CB48D5CF975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09ZadanieBiblioteka", "P09ZadanieBiblioteka\P09ZadanieBiblioteka.csproj", "{5BB180C0-DF47-40A9-9162-A7C829CA3A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{8BB77B6A-261E-41C4-8495-9CB48D5CF975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BB77B6A-261E-41C4-8495-9CB48D5CF975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BB77B6A-261E-41C4-8495-9CB48D5CF975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB180C0-DF47-40A9-9162-A7C829CA3A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB180C0-DF47-40A9-9162-A7C829CA3A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB180C0-DF47-40A9-9162-A7C829CA3A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB180C0-DF47-40A9-9162-A7C829CA3A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
