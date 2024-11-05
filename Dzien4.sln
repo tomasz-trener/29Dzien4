@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04AplikacjaZawodnicy", "P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05PrzegladKontroler", "P05PrzegladKontroler\P05PrzegladKontroler.csproj", "{BF5508F7-D591-4A61-9816-151F90A080F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06ZadaniePogoda", "P06ZadaniePogoda\P06ZadaniePogoda.csproj", "{6542EE3B-E53D-4604-AD84-37531544F911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BF5508F7-D591-4A61-9816-151F90A080F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF5508F7-D591-4A61-9816-151F90A080F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF5508F7-D591-4A61-9816-151F90A080F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6542EE3B-E53D-4604-AD84-37531544F911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6542EE3B-E53D-4604-AD84-37531544F911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6542EE3B-E53D-4604-AD84-37531544F911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6542EE3B-E53D-4604-AD84-37531544F911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
