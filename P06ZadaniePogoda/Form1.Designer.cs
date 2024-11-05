@@ -34,6 +34,8 @@
             this.rbKelvin = new System.Windows.Forms.RadioButton();
             this.rbFarenheit = new System.Windows.Forms.RadioButton();
             this.lblRaport = new System.Windows.Forms.Label();
+            this.pbObrazek = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbObrazek)).BeginInit();
             this.SuspendLayout();
             // 
             // cbMiasta
@@ -95,11 +97,21 @@
             this.lblRaport.TabIndex = 5;
             this.lblRaport.Text = "label1";
             // 
+            // pbObrazek
+            // 
+            this.pbObrazek.Location = new System.Drawing.Point(131, 93);
+            this.pbObrazek.Name = "pbObrazek";
+            this.pbObrazek.Size = new System.Drawing.Size(95, 61);
+            this.pbObrazek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbObrazek.TabIndex = 6;
+            this.pbObrazek.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 155);
+            this.ClientSize = new System.Drawing.Size(502, 193);
+            this.Controls.Add(this.pbObrazek);
             this.Controls.Add(this.lblRaport);
             this.Controls.Add(this.rbFarenheit);
             this.Controls.Add(this.rbKelvin);
@@ -108,6 +120,7 @@
             this.Controls.Add(this.cbMiasta);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pbObrazek)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +134,7 @@
         private System.Windows.Forms.RadioButton rbKelvin;
         private System.Windows.Forms.RadioButton rbFarenheit;
         private System.Windows.Forms.Label lblRaport;
+        private System.Windows.Forms.PictureBox pbObrazek;
     }
 }
 

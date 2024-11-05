@@ -1,4 +1,5 @@
-﻿using P09Konstruktory;
+﻿using P06ZadaniePogoda.Properties;
+using P09Konstruktory;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,6 +48,17 @@ namespace P06ZadaniePogoda
 
             lblRaport.Text = string.Format("Temperatura w mieście {0} wynosi {1} w jednostce {2}",
                 wybraneMiasto, temp, wybranaJednostka);
+
+
+            //ustawienie obrazka 
+            ManagerPogody mpCejsjusz = new ManagerPogody(Jednostka.Celsjusz);
+            double tempCejsusz = mpCejsjusz.PodajTemperature(wybraneMiasto);
+            if (tempCejsusz < 0)
+                pbObrazek.Image = Resources.snow;
+            else if (tempCejsusz <11)
+                pbObrazek.Image= Resources.rain;
+            else 
+                pbObrazek.Image= Resources.sun;
         }
     }
 }
