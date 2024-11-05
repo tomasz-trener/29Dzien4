@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02KlasyCzesciowe", "P02Kla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03ZadanieKalkulator", "P03ZadanieKalkulator\P03ZadanieKalkulator.csproj", "{F0757FEB-5833-49CE-9716-D5C52B5772F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04AplikacjaZawodnicy", "P04AplikacjaZawodnicy\P04AplikacjaZawodnicy.csproj", "{A6EA413A-26BB-40C2-80A5-676F7979B45C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05PrzegladKontroler", "P05PrzegladKontroler\P05PrzegladKontroler.csproj", "{BF5508F7-D591-4A61-9816-151F90A080F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F0757FEB-5833-49CE-9716-D5C52B5772F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0757FEB-5833-49CE-9716-D5C52B5772F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0757FEB-5833-49CE-9716-D5C52B5772F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6EA413A-26BB-40C2-80A5-676F7979B45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EA413A-26BB-40C2-80A5-676F7979B45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EA413A-26BB-40C2-80A5-676F7979B45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EA413A-26BB-40C2-80A5-676F7979B45C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5508F7-D591-4A61-9816-151F90A080F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5508F7-D591-4A61-9816-151F90A080F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5508F7-D591-4A61-9816-151F90A080F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5508F7-D591-4A61-9816-151F90A080F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

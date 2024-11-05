@@ -40,7 +40,8 @@ namespace P03ZadanieKalkulator
 
         public double WykonajDzialanie(string rownanie)
         {
-           
+           // treba rozbudowac metode o szukanie pozycji 
+           // aby działało na argumentach wielocyfrowych 
             int pozPlus = rownanie.IndexOf('+');
             int pozMinus = rownanie.IndexOf('-');
             int pozMnozenie = rownanie.IndexOf('*');
