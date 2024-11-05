@@ -22,4 +22,5 @@ Opcjonalne:
     Dodaj przycisk do czyszczenia wyœwietlacza.
     Dodaj przycisk do zmiany znaku liczby (plus/minus).
 
+
 ![alt text](kalkulator.png)
