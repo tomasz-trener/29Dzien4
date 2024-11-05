@@ -51,7 +51,7 @@ namespace P09ZadanieBiblioteka
                                     {
                                         DataWypozyczenia = new DateTime(2000,2,22),
                                         PrzewidywanaDataZwrotu = new DateTime(2000,3,7),
-                                        Uwagi = "06.03.2000 Zgoda na \r\nprzedłużenie",
+                                        Uwagi = "06.03.2000 Zgoda na przedłużenie",
                                         Przedluzenie = new Wypozyczenie()
                                         {
                                             PrzewidywanaDataZwrotu = new DateTime(2000,3,15),

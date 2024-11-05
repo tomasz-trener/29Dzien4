@@ -212,7 +212,7 @@
             this.lbHistoriaWypozyczen.FormattingEnabled = true;
             this.lbHistoriaWypozyczen.Location = new System.Drawing.Point(11, 58);
             this.lbHistoriaWypozyczen.Name = "lbHistoriaWypozyczen";
-            this.lbHistoriaWypozyczen.Size = new System.Drawing.Size(417, 134);
+            this.lbHistoriaWypozyczen.Size = new System.Drawing.Size(397, 95);
             this.lbHistoriaWypozyczen.TabIndex = 2;
             // 
             // dtpDataZakupu
