@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace trertert.Properties
+namespace P07DataBinding.Properties
 {
 
 
